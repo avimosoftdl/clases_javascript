@@ -38,3 +38,68 @@ console.log(speed !== age);
 // operador para invertir valores
 console.log(!speed);
 console.log(!(age > 18)); //el resultado debe de ser true
+
+// comenzamos a trabajar con operadores aritméticos
+var n1 = 20;
+var n2 = 10;
+// operador suma +
+console.log(n1 + n2);
+// operador resta -
+console.log(n1 - n2);
+// operador multiplicación *
+console.log(n1 * n2);
+// operador división /
+console.log(n1 / n2);
+//mezclando todas las operaciones
+console.log(n1 * (n2 - n1) /  n2); //precedencia de los signos es importante
+
+// definir 4 variables: boolean, number, string y null
+//con typeof mostrar el tipo de variable
+//ejecutar typeof a una variable no definida
+//declaramos las variables
+var age = 26;
+var value = true;
+var email = "adrian@dwexpress.mx";
+var nullValue = null;
+var undefined;
+//pedimos el tipo de valor para cada tipo de variable
+console.log(typeof age);
+console.log(typeof value);
+console.log(typeof email);
+console.log(typeof nullValue);
+console.log(typeof undefined);
+
+//manejo de conversiones implícitas
+console.log(2 + "3");
+//cambiando el string "3" a número entero
+console.log(parseInt("3") + 2);
+console.log(5 / 4);
+
+//manejo de condicionales if, else, else if
+var age = 18;
+var gender = "female";
+var isMom = false;
+var legalAgeFemale = (age >= 18 && gender = 'female');
+
+if (isMom){
+    alert("Entra gratis por 10 de Mayo");
+} else if (legalAgeFemale) {
+    alert("Puedes entrar gratis");
+} else {
+    alert("Págale chavo");
+}
+
+//manejo de condicionales if, else, else if
+var age = prompt("your age?");//prompt nos permite leer datos del usuario
+var gender = "female";
+var isMom = false;
+var legalAgeFemale = (age >= 18 && gender == 'female');
+
+if (isMom){
+    alert("Entra gratis por 10 de Mayo");
+} else if (legalAgeFemale) {
+    alert("Puedes entrar gratis");
+} else {
+    alert("Págale chavo");
+}
+
