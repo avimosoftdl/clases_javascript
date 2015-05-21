@@ -1,0 +1,21 @@
+- los objetos se mandan mensajes entre si
+
+- manager —> employee1
+          —> employee2
+	  —> employee3
+
+- el manager dice qué, el employee dice como
+
+- private —> manager
+- public  —> employee
+
+- las direcciones son del más abstracto al más concreto
+
+- javascript es llamado lenguaje prototípico
+
+- 3 características de un objeto: identidad, estado, comportamiento
+
+- var obj = {
+	brilla: true; // declaración de un objeto
+}
+
