@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div id="tiempo">
+		Time:
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script>
+		var time = 5;
+		setInterval(function(){
+			if(time == 0){
+				// $("#tiempo").toggle(); ---->>>> para que desaparezca al finalizar el contador
+				$("#tiempo").css("background-color", "red"); //cambia el fondo a color rojo cuando el contador llega a 0
+			}
+			if(time > 0){
+				time --;
+			}
+			$("#tiempo").html("Time: " + time);
+		},1000);
+	</script>
+</body>
+</html>
